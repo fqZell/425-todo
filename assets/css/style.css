@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: 'Raleway', sans-serif;
+}
+
+input, button {
+    font-family: 'Raleway', sans-serif;
+}
+
+ul, li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todoList {
+    margin-top: 48px;
+}
+
+.todoList h1 {
+    color: #ffffffe6;
+    text-align: left;
+}
+
+.todoList form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 12px;
+}
+
+.todoList form input {
+    width: 600px;
+
+    padding: 12px 0 12px 6px;
+
+    outline: none;
+    border: 2px solid transparent;
+    background-color: #ffffffe6;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.todoList form input:hover {
+    border: 2px solid #01aeff96;
+}
+
+.todoList form button {
+    width: 600px;
+
+    padding: 12px 0 12px 6px;
+
+    outline: none;
+    border: 2px solid #01aeff96;
+    background-color: transparent;
+    color: #01aeff96;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.todoList form button:hover {
+    background-color: #01aeff96;
+    border: 2px solid transparent;
+    color: #ffffffe6;
+}
+
+.todoList .lists {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+
+    margin-top: 24px;
+}
+
+.todoList .lists .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+
+    width: 600px;
+    padding: 12px;
+
+    background-color: #ffffffe6;
+    border-radius: 8px;
+}
+
+.todoList .lists .list p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.todoList .lists .list .done {
+    outline: none;
+    border: none;
+    background-color: #2bff0096;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.todoList .lists .list .done:hover {
+    background-color: #2bff00;
+}
+
+.todoList .lists .list .remove {
+    outline: none;
+    border: none;
+    background-color: #ff000096;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.todoList .lists .list .remove:hover {
+    background-color: #ff0000;
+}
